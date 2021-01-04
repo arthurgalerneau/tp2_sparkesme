@@ -73,7 +73,7 @@ object main {
       val df7 = df6.drop("date_ref")
       val df8 = df7.drop("date_ref_desecours")
       df8.show(100000)
-      df8.write.mode(SaveMode.Overwrite).partitionBy("date").csv("part2")
+      df8.write.mode(SaveMode.Overwrite).partitionBy("date").csv("part1")
   }
 
 }
